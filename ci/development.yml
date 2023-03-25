@@ -21,7 +21,7 @@ stages:
     jobs:
       - deployment: deployNotebooks
         displayName: Deploy Dbx Notebooks
-        # environment: 'DEV'
+        environment: 'development'
         strategy:
           runOnce:
             deploy:
