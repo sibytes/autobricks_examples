@@ -9,17 +9,17 @@ parameters:
   DbxWorkspaceSubDirs: none
   DbxWorkspaceRoot: none
 
-strategy:
-  matrix:
-    Python38:
-      python.version: '3.8'
+# strategy:
+#   matrix:
+#     Python38:
+#       python.version: '3.8'
 
 steps:
 
   - task: UsePythonVersion@0
     inputs:
-      versionSpec: '$(python.version)'
-    displayName: 'Use Python $(python.version)'
+      versionSpec: '3.8'
+    displayName: 'Use Python 3.8'
 
   - task: AzureKeyVault@1
     inputs:

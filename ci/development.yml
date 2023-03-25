@@ -6,7 +6,10 @@
 pool:
   vmImage: 'ubuntu-latest'
 
-
+# strategy:
+#   matrix:
+#     Python38:
+#       python.version: '3.8'
 
 stages:
   - stage: devevlopmentDeployment
