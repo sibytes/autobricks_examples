@@ -5,7 +5,7 @@ ROOT_DIR = os.getenv("ROOT_DIR")
 WORKSPACE_ROOT = os.getenv("WORKSPACE_ROOT")
 
 source_dir = f"{ROOT_DIR}/Databricks/Notebooks"
-target_dir = f"/{WORKSPACE_ROOT}"
+target_dir = f"/{WORKSPACE_ROOT}/"
 
 print(f"importing workspace files from {source_dir} to {target_dir}")
 
