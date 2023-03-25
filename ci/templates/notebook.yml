@@ -34,16 +34,15 @@ steps:
     inputs:
       scriptSource: 'filePath'
       scriptPath: ci/python/upload_notebooks_to_dbx.py
-    # env:
-    #   AUTH_TYPE: "SERVICE_PRINCIPAL_MGMT_ENDPOINT"
-    #   TENANT_ID: $(SVCDirectoryID)
-    #   SP_CLIENT_ID: $(SVCDirectoryID)
-    #   SP_CLIENT_SECRET: $(SVCSecretKey)
-    #   WORKSPACE_NAME: ${{ parameters.DbxWorkspaceName }}
-    #   RESOURCE_GROUP: ${{ parameters.ResourceGroup }}
-    #   SUBSCRIPTION_ID: ${{ parameters.SubscriptionId }}
-    #   DATABRICKS_API_HOST: ${{ parameters.DbxWorkspaceUrl }}
-      # QDPCLIHOME: "$(System.DefaultWorkingDirectory)/ci/"
-      # ROOT_DIR: $(System.DefaultWorkingDirectory)
-      # WORKSPACE_SUBDIRS: ${{ parameters.DbxWorkspaceSubDirs }}
-      # WORKSPACE_ROOT: ${{ parameters.DbxWorkspaceRoot }}
+    env:
+      AUTH_TYPE: "SERVICE_PRINCIPAL_MGMT_ENDPOINT"
+      TENANT_ID: $(SVCDirectoryID)
+      SP_CLIENT_ID: $(SVCDirectoryID)
+      SP_CLIENT_SECRET: $(SVCSecretKey)
+      WORKSPACE_NAME: ${{ parameters.DbxWorkspaceName }}
+      RESOURCE_GROUP: ${{ parameters.ResourceGroup }}
+      SUBSCRIPTION_ID: ${{ parameters.SubscriptionId }}
+      DATABRICKS_API_HOST: ${{ parameters.DbxWorkspaceUrl }}
+      ROOT_DIR: $(System.DefaultWorkingDirectory)
+      WORKSPACE_SUBDIRS: ${{ parameters.DbxWorkspaceSubDirs }}
+      WORKSPACE_ROOT: ${{ parameters.DbxWorkspaceRoot }}
