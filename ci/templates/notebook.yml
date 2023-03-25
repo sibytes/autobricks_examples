@@ -36,9 +36,9 @@ steps:
   #     scriptPath: ci/python/upload_notebooks_to_dbx.py
   #   env:
   #     AUTH_TYPE: "SERVICE_PRINCIPAL_MGMT_ENDPOINT"
-  #     TENANT_ID: $(SVCDirectoryID)
-  #     SP_CLIENT_ID: $(SVCDirectoryID)
-  #     SP_CLIENT_SECRET: $(SVCSecretKey)
+  #     TENANT_ID: $(SVCDirectoryIAZURE-IDD)
+  #     SP_CLIENT_ID: $(DATALAKE-SPN-APPID)
+  #     SP_CLIENT_SECRET: $(DATALAKE-SPN-CREDENTIAL)
   #     WORKSPACE_NAME: ${{ parameters.DbxWorkspaceName }}
   #     RESOURCE_GROUP: ${{ parameters.ResourceGroup }}
   #     SUBSCRIPTION_ID: ${{ parameters.SubscriptionId }}
