@@ -5,17 +5,18 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+
 strategy:
   matrix:
     Python38:
       python.version: '3.8'
 
 stages:
-- stage: devDeployment
-  displayName: Deploy dbx notebooks to Dev
+  - stage: devevlopmentDeployment
+    displayName: Deploy dbx notebooks to Dev
+    variables:
+    - group: qdp-dev-variables
 
-  variables:
-  - group: development
 
   jobs:
   - deployment: deployNotebooks
