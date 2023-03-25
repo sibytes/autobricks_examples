@@ -2,3 +2,4 @@
 from bronze_utils import do_bronze
 
 do_bronze()
+print("it worked")
