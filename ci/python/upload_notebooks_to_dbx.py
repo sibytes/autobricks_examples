@@ -11,7 +11,7 @@ print(f"importing workspace files from {source_dir} to {target_dir}")
 
 Workspace.workspace_import_dir(
     from_notebook_root=source_dir,
-    source_dir=target_dir,
+    # source_dir=target_dir,
     target_dir="autobricks",
     deploy_mode=Workspace.DeployMode.PARENT
 )
