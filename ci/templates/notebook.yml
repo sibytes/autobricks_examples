@@ -15,7 +15,7 @@ steps:
     inputs:
       versionSpec: '$(python.version)'
     displayName: 'Use Python $(python.version)'
-`
+
   - task: AzureKeyVault@1
     inputs:
       azureSubscription: ${{ parameters.azureResourceManagerConnection }}
