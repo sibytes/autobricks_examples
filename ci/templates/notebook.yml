@@ -9,11 +9,6 @@ parameters:
   DbxWorkspaceSubDirs: none
   DbxWorkspaceRoot: none
 
-# strategy:
-#   matrix:
-#     Python38:
-#       python.version: '3.8'
-
 steps:
 
   - task: UsePythonVersion@0
