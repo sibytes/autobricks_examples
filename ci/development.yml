@@ -6,16 +6,16 @@
 pool:
   vmImage: 'ubuntu-latest'
 
-strategy:
-  matrix:
-    Python38:
-      python.version: '3.8'
+# strategy:
+#   matrix:
+#     Python38:
+#       python.version: '3.8'
 
 stages:
   - stage: devevlopmentDeployment
     displayName: Deploy dbx notebooks to Dev
     variables:
-    - group: qdp-dev-variables
+      - group: development
 
 
     jobs:
