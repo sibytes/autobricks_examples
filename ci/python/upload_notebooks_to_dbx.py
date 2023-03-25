@@ -1,8 +1,9 @@
 # from autobricks import Workspace
 import os
-from pprint import pprint
 
-print(os.environ)
+print(os.getenv("TENANT_ID"))
+print(os.getenv("SP_CLIENT_ID"))
+print(os.getenv("SP_CLIENT_SECRET"))
 
 # Workspace.workspace_import_dir(
 #     from_notebook_root="",

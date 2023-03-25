@@ -36,7 +36,7 @@ steps:
       scriptPath: ci/python/upload_notebooks_to_dbx.py
     env:
       AUTH_TYPE: "SERVICE_PRINCIPAL_MGMT_ENDPOINT"
-      TENANT_ID: $(SVCDirectoryIAZURE-IDD)
+      TENANT_ID: $(AZURE-ID)
       SP_CLIENT_ID: $(DATALAKE-SPN-APPID)
       SP_CLIENT_SECRET: $(DATALAKE-SPN-CREDENTIAL)
       WORKSPACE_NAME: ${{ parameters.DbxWorkspaceName }}
