@@ -26,14 +26,14 @@ stages:
         runOnce:
           deploy:
             steps:
-            - checkout: self
-            - template: ../ci/templates/notebook.yml
-              parameters:
-                azureResourceManagerConnection: 'development_subscription'
-                keyVaultName: '$(KEY_VAULT)'
-                SubscriptionId: '$(SUBSCRIPTION_ID)'
-                RGName: '$(RESOURCE_GROUP)'
-                DbxWorkspaceName: '$(DATABRICKS_WORKSPACE_NAME)'
-                DbxWorkspaceUrl: '$(DATABRICKS_WORKSPACE_URL)'
-                DbxWorkspaceSubDirs: '$(DATABRICKS_WORKSPACE_SUBDIRS)'
-                DbxWorkspaceRoot: '$(DATABRICKS_WORKSPACE_ROOT)'
+              - checkout: self
+              - template: ../ci/templates/notebook.yml
+                parameters:
+                  azureResourceManagerConnection: 'development_subscription'
+                  keyVaultName: '$(KEY_VAULT)'
+                  SubscriptionId: '$(SUBSCRIPTION_ID)'
+                  RGName: '$(RESOURCE_GROUP)'
+                  DbxWorkspaceName: '$(DATABRICKS_WORKSPACE_NAME)'
+                  DbxWorkspaceUrl: '$(DATABRICKS_WORKSPACE_URL)'
+                  DbxWorkspaceSubDirs: '$(DATABRICKS_WORKSPACE_SUBDIRS)'
+                  DbxWorkspaceRoot: '$(DATABRICKS_WORKSPACE_ROOT)'
