@@ -47,4 +47,4 @@ steps:
       WORKSPACE_SUBDIRS: "Bronze, Silver, Gold"
       WORKSPACE_ROOT: "autobricks"
       AUTOBRICKS_LOGGING: INFO
-      SSL_VERIFY: False
+      SSL_VERIFY: True
