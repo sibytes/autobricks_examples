@@ -1,5 +1,5 @@
 adal==1.2.7
-autobricks==0.1.4.dev2
+autobricks==0.1.4.dev3
 certifi==2022.12.7
 cffi==1.15.1
 charset-normalizer==3.1.0
