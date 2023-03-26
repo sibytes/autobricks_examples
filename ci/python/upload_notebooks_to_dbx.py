@@ -11,6 +11,8 @@ sub_folders = [d.strip() for d in WORKSPACE_SUBDIRS.split(",")]
 
 for f in sub_folders:
 
+    print(f"*************************** {f} **************************************")
+
     Workspace.workspace_import_dir(
         from_notebook_root=from_notebook_root,
         source_dir=f"/{f}/",
