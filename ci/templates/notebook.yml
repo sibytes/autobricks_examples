@@ -46,4 +46,4 @@ steps:
       ROOT_DIR: $(System.DefaultWorkingDirectory)
       WORKSPACE_SUBDIRS: "Bronze, Silver, Gold"
       WORKSPACE_ROOT: "autobricks"
-      AUTOBRICKS_LOGGING: DEBUG
+      AUTOBRICKS_LOGGING: INFO
